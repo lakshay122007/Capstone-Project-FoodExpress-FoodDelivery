@@ -1,4 +1,8 @@
 
+html{
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +11,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background: url('https://png.pngtree.com/thumb_back/fh260/background/20210805/pngtree-modern-simple-elegant-cool-gradient-cream-landing-page-website-background-image_757446.jpg') no-repeat center center/cover;
+    background-attachment: fixed; 
     color: #333;
     line-height: 1.6;
 }
@@ -22,61 +27,105 @@ body {
 
 /* HEADER NAVIGATION */
 
-.main-header {
+header {
     background-color: #ff6b35;
-    color: white;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 20px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.main-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
 }
 
-.logo h1 {
+.logo {
+    color: white;
     font-size: 28px;
     font-weight: bold;
-    color: white;
 }
 
-.main-nav ul {
-    list-style: none;
+.logo span {
+    color: #ffe66d;
+}
+
+nav ul {
     display: flex;
+    list-style: none;
     gap: 30px;
 }
 
-.main-nav a {
+nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
+    transition: color 0.3s;
 }
 
-.main-nav a:hover {
+nav ul li a:hover {
     color: #ffe66d;
 }
 
-.main-nav a.active {
-    color: #ffe66d;
+/* Header Right Section with Cart */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.header-buttons {
+/* Cart Icon Styles */
+.cart-icon {
+    position: relative;
+    font-size: 28px;
+    text-decoration: none;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.cart-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Cart Badge */
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #ffe66d;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    min-width: 20px;
+    text-align: center;
+}
+
+.auth-buttons {
     display: flex;
     gap: 15px;
 }
 
-.btn {
+.btn-login,
+.btn-signup {
     padding: 8px 20px;
-    border-radius: 5px;
     text-decoration: none;
+    border-radius: 5px;
     font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-login {
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-login:hover {
+    background-color: white;
+    color: #ff6b35;
 }
 
 .btn-signup {
@@ -89,103 +138,57 @@ body {
     background-color: #ffd93d;
 }
 
-.btn-login {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-}
 
-.btn-login:hover {
-    background-color: white;
-    color: #ff6b35;
-}
+
 
 /* ================================================
    HERO SECTION
    ================================================ */
 
 .menu-hero {
-    background-color: #ff6b35;
+    background: url("https://as1.ftcdn.net/jpg/01/55/42/56/1000_F_155425617_Ldu5aMd82908ljZTgN7t0RewhmjpXOTj.jpg") no-repeat center center/cover;
     padding-top: 150px;
     padding-bottom: 80px;
     text-align: center;
     color: white;
     margin-top: 60px;
+    background-attachment: fixed;
+    position: relative;
+
 }
 
 .hero-content h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+
 }
 
 .hero-content p {
     font-size: 20px;
+    z-index: 2;
+    position: relative;
+
 }
-
-/* ================================================
-   FILTER SECTION
-   ================================================ */
-
-.filter-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: white;
-}
-
-.filter-section h2 {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.filter-tabs {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.filter-tabs input[type="radio"] {
-    display: none;
-}
-
-.filter-btn {
-    padding: 12px 30px;
-    background-color: white;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.filter-tabs input[type="radio"]:checked + .filter-btn {
-    background-color: #ff6b35;
-    color: white;
-    border-color: #ff6b35;
-}
-
-.filter-btn:hover {
-    background-color: #ff6b35;
-    color: white;
-    border-color: #ff6b35;
-}
-
-/* Filter Logic */
-#veg-only:checked ~ .container .food-item.nonveg {
-    display: none;
-}
-
-#nonveg-only:checked ~ .container .food-item.veg {
-    display: none;
+.menu-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
 }
 
 /* ================================================
    RESTAURANT SECTION
    ================================================ */
-
-.restaurant-section {
+#restaurant-section {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: transparent;
 }
 
 .section-title {
@@ -199,12 +202,13 @@ body {
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
+    
 }
 
 .restaurant-card {
     flex: 1;
     min-width: 260px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -276,7 +280,7 @@ body {
 .category-section {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #f9f9f9;
+    background-color: transparent;
 }
 
 .category-nav {
@@ -362,7 +366,7 @@ body {
 .menu-items-section {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: white;
+    background-color: transparent;
 }
 
 /* Subcategory Tabs */
@@ -420,6 +424,58 @@ body {
     display: block;
 }
 
+/* PIZZA TAB CONTROLS */
+#all-pizzas:checked ~ .show-all-pizza {
+    display: block;
+}
+
+#veg-pizza-tab:checked ~ .show-veg-pizza {
+    display: block;
+}
+
+#sides-tab:checked ~ .show-sides {
+    display: block;
+}
+
+#signature-pizza-tab:checked ~ .show-signature-pizza {
+    display: block;
+}
+
+/* INDIAN CUISINE TAB CONTROLS */
+#all-indian:checked ~ .show-all-indian {
+    display: block;
+}
+
+#north-indian-tab:checked ~ .show-north-indian {
+    display: block;
+}
+
+#south-indian-tab:checked ~ .show-south-indian {
+    display: block;
+}
+
+#biryani-tab:checked ~ .show-biryani {
+    display: block;
+}
+
+/* SUSHI TAB CONTROLS */
+#all-sushi:checked ~ .show-all-sushi {
+    display: block;
+}
+
+#veg-sushi-tab:checked ~ .show-veg-sushi {
+    display: block;
+}
+
+#nonveg-sushi-tab:checked ~ .show-nonveg-sushi {
+    display: block;
+}
+
+#special-sushi-tab:checked ~ .show-special-sushi {
+    display: block;
+}
+
+
 /* ================================================
    FOOD ITEMS GRID
    ================================================ */
@@ -434,7 +490,7 @@ body {
     flex: 1;
     min-width: 280px;
     max-width: 360px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);

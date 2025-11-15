@@ -7,27 +7,30 @@
     <link rel="stylesheet" href="Menu.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header Navigation -->
-    <header class="main-header">
-      <div class="container">
-        <div class="logo">
-          <h1>🍽️ FoodHub</h1>
-        </div>
-        <nav class="main-nav">
-          <ul>
-            <li><a href="MainPage.html">Home</a></li>
-            <li><a href="menu.html" class="active">Menu</a></li>
-            <li><a href="#restaurants">Restaurants</a></li>
-            <li><a href="MainPage.html">About</a></li>
-            <li><a href="MainPage.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="header-buttons">
-          <a href="#signup" class="btn btn-signup">Sign Up</a>
-          <a href="#login" class="btn btn-login">Login</a>
+    <header>
+      <h1 class="logo">Food<span>Express</span></h1>
+      <nav>
+        <ul>
+          <li><a href="MainPage.html">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#restaurant-section">Restaurants</a></li>
+          <li><a href="MainPage.html">About</a></li>
+          <li><a href="MainPage.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <a href="#cart" class="cart-icon">
+          🛒
+          <span class="cart-badge">0</span>
+        </a>
+        <div class="auth-buttons">
+          <a href="Login.html" class="btn-login">Login</a>
+          <a href="Signup.html" class="btn-signup">Sign Up</a>
         </div>
       </div>
     </header>
@@ -40,24 +43,8 @@
       </div>
     </section>
 
-    <!-- Filter Section (CSS Only) -->
-    <section class="filter-section">
-      <div class="container">
-        <h2>Filter Your Choice</h2>
-        <div class="filter-tabs">
-          <input type="radio" name="diet-filter" id="all-items" checked />
-          <input type="radio" name="diet-filter" id="veg-only" />
-          <input type="radio" name="diet-filter" id="nonveg-only" />
-
-          <label for="all-items" class="filter-btn">All Items</label>
-          <label for="veg-only" class="filter-btn">🌿 Vegetarian</label>
-          <label for="nonveg-only" class="filter-btn">🍖 Non-Veg</label>
-        </div>
-      </div>
-    </section>
-
     <!-- Restaurant Selection -->
-    <section class="restaurant-section">
+    <section id="restaurant-section">
       <div class="container">
         <h2 class="section-title">Select Restaurant</h2>
         <div class="restaurant-grid">
@@ -65,14 +52,14 @@
           <div class="restaurant-card">
             <div class="restaurant-image">
               <img
-                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=400&h=300&fit=crop"
+                src="https://www.licious.in/blog/wp-content/uploads/2022/08/shutterstock_574607542.jpg"
                 alt="Restaurant"
               />
               <div class="restaurant-badge">⭐ 4.5</div>
             </div>
             <div class="restaurant-info">
-              <h3>The Grand Kitchen</h3>
-              <p>Multi-Cuisine • 30-40 mins</p>
+              <h3>Burger Palace</h3>
+              <p>American • 30-40 mins</p>
               <a href="#grand-kitchen" class="view-menu-btn">View Menu</a>
             </div>
           </div>
@@ -81,14 +68,14 @@
           <div class="restaurant-card">
             <div class="restaurant-image">
               <img
-                src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=400&h=300&fit=crop"
+                src="https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/tandoori-paneer-ultimate-cheese.bcc0e7134fa86daa1ac30816ed1d8c21.1.jpg"
                 alt="Restaurant"
               />
               <div class="restaurant-badge">⭐ 4.7</div>
             </div>
             <div class="restaurant-info">
-              <h3>Spice Route</h3>
-              <p>Indian Cuisine • 25-35 mins</p>
+              <h3>Pizza Corner</h3>
+              <p>Italian • 25-35 mins</p>
               <a href="#spice-route" class="view-menu-btn">View Menu</a>
             </div>
           </div>
@@ -97,14 +84,14 @@
           <div class="restaurant-card">
             <div class="restaurant-image">
               <img
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&h=300&fit=crop"
+                src="https://vegplatter.in/files/public/images/partner/menu/17/Dal%20Makhani%20%2B%201%20Butter%20Naan%20final_0.jpg"
                 alt="Restaurant"
               />
               <div class="restaurant-badge">⭐ 4.3</div>
             </div>
             <div class="restaurant-info">
-              <h3>Pizza Paradise</h3>
-              <p>Italian • 20-30 mins</p>
+              <h3>Spice Garden</h3>
+              <p>Indian • 20-30 mins</p>
               <a href="#pizza-paradise" class="view-menu-btn">View Menu</a>
             </div>
           </div>
@@ -113,14 +100,14 @@
           <div class="restaurant-card">
             <div class="restaurant-image">
               <img
-                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=400&h=300&fit=crop"
+                src="https://png.pngtree.com/thumb_back/fw800/background/20241126/pngtree-picture-of-a-sushi-platter-with-variety-rolls-and-nigiri-image_16649134.jpg"
                 alt="Restaurant"
               />
               <div class="restaurant-badge">⭐ 4.6</div>
             </div>
             <div class="restaurant-info">
-              <h3>Burger Junction</h3>
-              <p>Fast Food • 15-25 mins</p>
+              <h3>Sushi Station</h3>
+              <p>Japanese • 15-25 mins</p>
               <a href="#burger-junction" class="view-menu-btn">View Menu</a>
             </div>
           </div>
@@ -232,7 +219,7 @@
               <div class="food-item veg">
                 <div class="food-image">
                   <img
-                    src="https://images.unsplash.com/photo-1525059696034-4967a729002a?w=400&h=300&fit=crop"
+                    src="https://coox-new.s3.ap-south-1.amazonaws.com/images/d/dishes/Paneer%20Tikka%20Burger-undefined-dish-img.jpeg?v=1627296847405"
                     alt="Veg Burger"
                   />
                   <span class="diet-badge veg-badge">🌿 VEG</span>
@@ -251,7 +238,7 @@
               <div class="food-item veg">
                 <div class="food-image">
                   <img
-                    src="https://images.unsplash.com/photo-1520072959219-c595dc870360?w=400&h=300&fit=crop"
+                    src="https://mcdonaldsblog.in/wp-content/uploads/2018/04/McAloo-tikki.jpg"
                     alt="Veg Burger"
                   />
                   <span class="diet-badge veg-badge">🌿 VEG</span>
@@ -270,7 +257,7 @@
               <div class="food-item veg">
                 <div class="food-image">
                   <img
-                    src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=400&h=300&fit=crop"
+                    src="https://images.jdmagicbox.com/quickquotes/images_main/root-vegetables-burger-2224660599-bwytnxf0.jpg"
                     alt="Veggie Burger"
                   />
                   <span class="diet-badge veg-badge">🌿 VEG</span>
@@ -527,10 +514,716 @@
       </div>
     </section>
 
+
+
+     <!-- Pizza Menu -->
+
+   
+<section class="menu-items-section" id="pizza">
+  <div class="container">
+    <h2 class="section-title">Pizza Menu</h2>
+    
+    <!-- Subcategory Tabs -->
+    <div class="subcategory-tabs">
+      <input type="radio" name="pizza-tab" id="all-pizzas" checked />
+      <input type="radio" name="pizza-tab" id="veg-pizza-tab" />
+      <input type="radio" name="pizza-tab" id="sides-tab" />
+      <input type="radio" name="pizza-tab" id="signature-pizza-tab" />
+      
+      <label for="all-pizzas" class="tab-btn">All Pizza</label>
+      <label for="veg-pizza-tab" class="tab-btn">Veg Pizza</label>
+      <label for="sides-tab" class="tab-btn">Sides</label>
+      <label for="signature-pizza-tab" class="tab-btn">Signature Pizza</label>
+      
+      <!-- All Pizzas Content -->
+      <div class="tab-content show-all-pizza">
+        <div class="food-grid">
+          <!-- Veg Pizza 1 -->
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/country-feast.b6a79c6cc0c7aa3aa46c50ad91c64f2e.1.jpg" alt="Veg Pizza"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Farmhouse Pizza</h3>
+              <p>Loaded with Herbed Onion & Green capsicum, Sweet Corn, Tomato with signature pan sauce and Mozzarella cheese.</p>
+              <div class="food-footer">
+                <span class="price">₹299</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Veg Pizza 2 -->
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/veggie-feast.2f4705ef8d514d2703bb1bd034ba903c.1.jpg" alt="Veg Pizza"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Veggie Feast</h3>
+              <p>Herbed onion and Green Capsicum, juicy Sweet Corn & Mozzarella cheese with flavourful pan sauce.</p>
+              <div class="food-footer">
+                <span class="price">₹289</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Veg Pizza 3 -->
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/veggie-supreme.4bbddf98eccea9929192db1494ba3678.1.jpg" alt="Veg Pizza"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Veggie Supreme</h3>
+              <p>A supreme combination of Black Olives, Green Capsicum, Mushroom, Onion, spicy Red Paprika & juicy Sweet Corn.</p>
+              <div class="food-footer">
+                <span class="price">₹319</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Sides 1 -->
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/side/creamy-garlic-bread-stix.56bac02d589517202398a899db7016e8.1.jpg" alt="Sides"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Loaded Breadstix</h3>
+              <p>Freshly baked bread sticks, topped with a flavourful dressing & seasoned with herbs.</p>
+              <div class="food-footer">
+                <span class="price">₹149</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Sides 2 -->
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/side/indi-cheesy-pocket-2pc-single.57fa9c1914321a1b70128c33604dac48.1.jpg" alt="Sides"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Cheesy Pocket 2pc</h3>
+              <p>Cheese-loaded pockets, stuffed with finely chopped veggie mix and Texas garlic sauce.</p>
+              <div class="food-footer">
+                <span class="price">₹139</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Signature Pizza -->
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/tandoori-paneer.345b2b76013be77de027ba09aff9abe6.1.jpg" alt="Signature Pizza"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+              <span class="special-badge">CHEF SPECIAL</span>
+            </div>
+            <div class="food-details">
+              <h3>Tandoori Paneer</h3>
+              <p>Spiced Paneer, Crunchy Onions & Green Capsicum, spicy Red Paprika with delicious Tandoori Sauce!</p>
+              <div class="food-footer">
+                <span class="price">₹349</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Veg Pizzas Only -->
+      <div class="tab-content show-veg-pizza">
+        <div class="food-grid">
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/country-feast.b6a79c6cc0c7aa3aa46c50ad91c64f2e.1.jpg" alt="Veg Pizza"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Farmhouse Pizza</h3>
+              <p>Loaded with Herbed Onion & Green capsicum, Sweet Corn, Tomato with signature pan sauce.</p>
+              <div class="food-footer">
+                <span class="price">₹299</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/veggie-feast.2f4705ef8d514d2703bb1bd034ba903c.1.jpg" alt="Veg Pizza"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Veggie Feast</h3>
+              <p>Herbed onion and Green Capsicum, juicy Sweet Corn & Mozzarella cheese.</p>
+              <div class="food-footer">
+                <span class="price">₹289</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/veggie-supreme.4bbddf98eccea9929192db1494ba3678.1.jpg" alt="Veg Pizza"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Veggie Supreme</h3>
+              <p>A supreme combination of Black Olives, Green Capsicum, Mushroom, Onion.</p>
+              <div class="food-footer">
+                <span class="price">₹319</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Sides Only -->
+      <div class="tab-content show-sides">
+        <div class="food-grid">
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/side/creamy-garlic-bread-stix.56bac02d589517202398a899db7016e8.1.jpg" alt="Sides"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Loaded Breadstix</h3>
+              <p>Freshly baked bread sticks, topped with a flavourful dressing & seasoned with herbs.</p>
+              <div class="food-footer">
+                <span class="price">₹149</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/side/indi-cheesy-pocket-2pc-single.57fa9c1914321a1b70128c33604dac48.1.jpg" alt="Sides"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Cheesy Pocket 2pc</h3>
+              <p>Cheese-loaded pockets, stuffed with finely chopped veggie mix.</p>
+              <div class="food-footer">
+                <span class="price">₹139</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Signature Pizzas Only -->
+      <div class="tab-content show-signature-pizza">
+        <div class="food-grid">
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/tandoori-paneer.345b2b76013be77de027ba09aff9abe6.1.jpg" alt="Signature Pizza"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+              <span class="special-badge">CHEF SPECIAL</span>
+            </div>
+            <div class="food-details">
+              <h3>Tandoori Paneer</h3>
+              <p>Spiced Paneer, Crunchy Onions & Green Capsicum with delicious Tandoori Sauce!</p>
+              <div class="food-footer">
+                <span class="price">₹349</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/mazedar-makhni-paneer.7d0b4b6efed172e6e089f0c86959b3f3.1.jpg" alt="Signature Pizza"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+              <span class="special-badge">CHEF SPECIAL</span>
+            </div>
+            <div class="food-details">
+              <h3>Mazedar Makhni Paneer</h3>
+              <p>A treat for all makhni lovers. Spiced paneer, onion, juicy red bell peppers with makhni sauce.</p>
+              <div class="food-footer">
+                <span class="price">₹359</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDIAN CUISINE SECTION -->
+<section class="menu-items-section" id="indian">
+  <div class="container">
+    <h2 class="section-title">Indian Cuisine Menu</h2>
+    
+    <!-- Subcategory Tabs -->
+    <div class="subcategory-tabs">
+      <input type="radio" name="indian-tab" id="all-indian" checked />
+      <input type="radio" name="indian-tab" id="north-indian-tab" />
+      <input type="radio" name="indian-tab" id="south-indian-tab" />
+      <input type="radio" name="indian-tab" id="biryani-tab" />
+      
+      <label for="all-indian" class="tab-btn">All Indian</label>
+      <label for="north-indian-tab" class="tab-btn">North Indian</label>
+      <label for="south-indian-tab" class="tab-btn">South Indian</label>
+      <label for="biryani-tab" class="tab-btn">Biryani</label>
+      
+      <!-- All Indian Content -->
+      <div class="tab-content show-all-indian">
+        <div class="food-grid">
+          <!-- North Indian 1 -->
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://vegplatter.in/files/public/images/partner/menu/17/Dal%20Makhani%20%2B%201%20Butter%20Naan%20final_0.jpg" alt="North Indian"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Dal Makhani with Naan</h3>
+              <p>Creamy black lentils cooked overnight with butter and cream, served with butter naan.</p>
+              <div class="food-footer">
+                <span class="price">₹249</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- North Indian 2 -->
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Paneer-Butter-Masala-Recipe.jpg" alt="North Indian"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Paneer Butter Masala</h3>
+              <p>Cottage cheese cubes in rich tomato and butter gravy with aromatic spices.</p>
+              <div class="food-footer">
+                <span class="price">₹269</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- South Indian 1 -->
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://www.cookwithmanali.com/wp-content/uploads/2020/05/Masala-Dosa.jpg" alt="South Indian"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Masala Dosa</h3>
+              <p>Crispy rice crepe filled with spiced potato filling, served with sambar and chutney.</p>
+              <div class="food-footer">
+                <span class="price">₹159</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- South Indian 2 -->
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://static.toiimg.com/thumb/53338316.cms?width=1200&height=900" alt="South Indian"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Idli Vada Combo</h3>
+              <p>Soft steamed rice cakes with crispy lentil fritters, coconut chutney and sambar.</p>
+              <div class="food-footer">
+                <span class="price">₹139</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Biryani 1 -->
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2020/01/veg-biryani-1.jpg" alt="Veg Biryani"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Veg Biryani</h3>
+              <p>Aromatic basmati rice layered with mixed vegetables and fragrant spices.</p>
+              <div class="food-footer">
+                <span class="price">₹229</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Biryani 2 -->
+          <div class="food-item nonveg">
+            <div class="food-image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoIycguxFgTpIN3L00tYQhJ2WkypXj5w_QkQ&s" alt="Chicken Biryani"/>
+              <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+              <span class="special-badge">CHEF SPECIAL</span>
+            </div>
+            <div class="food-details">
+              <h3>Chicken Biryani</h3>
+              <p>Fragrant basmati rice with tender chicken pieces, aromatic spices and saffron.</p>
+              <div class="food-footer">
+                <span class="price">₹299</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- North Indian Only -->
+      <div class="tab-content show-north-indian">
+        <div class="food-grid">
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://vegplatter.in/files/public/images/partner/menu/17/Dal%20Makhani%20%2B%201%20Butter%20Naan%20final_0.jpg" alt="North Indian"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Dal Makhani with Naan</h3>
+              <p>Creamy black lentils cooked overnight with butter and cream.</p>
+              <div class="food-footer">
+                <span class="price">₹249</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Paneer-Butter-Masala-Recipe.jpg" alt="North Indian"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Paneer Butter Masala</h3>
+              <p>Cottage cheese cubes in rich tomato and butter gravy.</p>
+              <div class="food-footer">
+                <span class="price">₹269</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- South Indian Only -->
+      <div class="tab-content show-south-indian">
+        <div class="food-grid">
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://www.cookwithmanali.com/wp-content/uploads/2020/05/Masala-Dosa.jpg" alt="South Indian"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Masala Dosa</h3>
+              <p>Crispy rice crepe filled with spiced potato filling.</p>
+              <div class="food-footer">
+                <span class="price">₹159</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://static.toiimg.com/thumb/53338316.cms?width=1200&height=900" alt="South Indian"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Idli Vada Combo</h3>
+              <p>Soft steamed rice cakes with crispy lentil fritters.</p>
+              <div class="food-footer">
+                <span class="price">₹139</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Biryani Only -->
+      <div class="tab-content show-biryani">
+        <div class="food-grid">
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2020/01/veg-biryani-1.jpg" alt="Veg Biryani"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Veg Biryani</h3>
+              <p>Aromatic basmati rice layered with mixed vegetables.</p>
+              <div class="food-footer">
+                <span class="price">₹229</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-item nonveg">
+            <div class="food-image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoIycguxFgTpIN3L00tYQhJ2WkypXj5w_QkQ&s" alt="Chicken Biryani"/>
+              <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+              <span class="special-badge">CHEF SPECIAL</span>
+            </div>
+            <div class="food-details">
+              <h3>Chicken Biryani</h3>
+              <p>Fragrant basmati rice with tender chicken pieces and saffron.</p>
+              <div class="food-footer">
+                <span class="price">₹299</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUSHI SECTION -->
+<section class="menu-items-section" id="sushi">
+  <div class="container">
+    <h2 class="section-title">Sushi Menu</h2>
+    
+    <!-- Subcategory Tabs -->
+    <div class="subcategory-tabs">
+      <input type="radio" name="sushi-tab" id="all-sushi" checked />
+      <input type="radio" name="sushi-tab" id="veg-sushi-tab" />
+      <input type="radio" name="sushi-tab" id="nonveg-sushi-tab" />
+      <input type="radio" name="sushi-tab" id="special-sushi-tab" />
+      
+      <label for="all-sushi" class="tab-btn">All Sushi</label>
+      <label for="veg-sushi-tab" class="tab-btn">Veg Sushi</label>
+      <label for="nonveg-sushi-tab" class="tab-btn">Non-Veg Sushi</label>
+      <label for="special-sushi-tab" class="tab-btn">Special Rolls</label>
+      
+      <!-- All Sushi Content -->
+      <div class="tab-content show-all-sushi">
+        <div class="food-grid">
+          <!-- Veg Sushi 1 -->
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://www.justonecookbook.com/wp-content/uploads/2020/01/Vegetable-Sushi-0286-I.jpg" alt="Veg Sushi"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Vegetable Maki Roll</h3>
+              <p>Fresh cucumber, avocado, and carrot wrapped in seasoned rice and nori.</p>
+              <div class="food-footer">
+                <span class="price">₹249</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Veg Sushi 2 -->
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://theforkedspoon.com/wp-content/uploads/2023/05/Avocado-Sushi-Recipe-2.jpg" alt="Veg Sushi"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Avocado Roll</h3>
+              <p>Creamy avocado slices with cucumber and sesame seeds in rice and nori.</p>
+              <div class="food-footer">
+                <span class="price">₹269</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Non-Veg Sushi 1 -->
+          <div class="food-item nonveg">
+            <div class="food-image">
+              <img src="https://www.seriouseats.com/thmb/bWIbU8mEzNjpEH8KBX0WKzNF_Ow=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2016__03__20160323-california-roll-31-358a52e9c1b9410ab18a79a3e43377c1.jpg" alt="California Roll"/>
+              <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>California Roll</h3>
+              <p>Crab stick, avocado, cucumber with tobiko and creamy mayo sauce.</p>
+              <div class="food-footer">
+                <span class="price">₹349</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Non-Veg Sushi 2 -->
+          <div class="food-item nonveg">
+            <div class="food-image">
+              <img src="https://www.seriouseats.com/thmb/tXC5VPIGdjwl9TdH_TRqTIqDsXY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2019__05__20190509-salmon-sushi-vicky-wasik-14-7825e90a4a1e462cb62ffbbca97cd464.jpg" alt="Salmon Nigiri"/>
+              <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Salmon Nigiri</h3>
+              <p>Fresh salmon slices over seasoned sushi rice with wasabi.</p>
+              <div class="food-footer">
+                <span class="price">₹379</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Special Roll 1 -->
+          <div class="food-item nonveg">
+            <div class="food-image">
+              <img src="https://img.freepik.com/premium-photo/assorted-sushi-platter-elegant-table-setting_711700-21906.jpg" alt="Dragon Roll"/>
+              <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+              <span class="special-badge">CHEF SPECIAL</span>
+            </div>
+            <div class="food-details">
+              <h3>Dragon Roll</h3>
+              <p>Shrimp tempura, eel, avocado with special dragon sauce and sesame seeds.</p>
+              <div class="food-footer">
+                <span class="price">₹499</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Special Roll 2 -->
+          <div class="food-item nonveg">
+            <div class="food-image">
+              <img src="https://static.onecms.io/wp-content/uploads/sites/44/2023/02/09/8500-spicy-tuna-roll-DDMFS-4x3-b133e170d5c747548efa804e3f1b5a3b.jpg" alt="Spicy Tuna Roll"/>
+              <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+              <span class="special-badge">CHEF SPECIAL</span>
+            </div>
+            <div class="food-details">
+              <h3>Spicy Tuna Roll</h3>
+              <p>Fresh tuna with spicy mayo, cucumber, and chili flakes topped with spring onions.</p>
+              <div class="food-footer">
+                <span class="price">₹449</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Veg Sushi Only -->
+      <div class="tab-content show-veg-sushi">
+        <div class="food-grid">
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://www.justonecookbook.com/wp-content/uploads/2020/01/Vegetable-Sushi-0286-I.jpg" alt="Veg Sushi"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Vegetable Maki Roll</h3>
+              <p>Fresh cucumber, avocado, and carrot wrapped in seasoned rice and nori.</p>
+              <div class="food-footer">
+                <span class="price">₹249</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-item veg">
+            <div class="food-image">
+              <img src="https://theforkedspoon.com/wp-content/uploads/2023/05/Avocado-Sushi-Recipe-2.jpg" alt="Veg Sushi"/>
+              <span class="diet-badge veg-badge">🌿 VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Avocado Roll</h3>
+              <p>Creamy avocado slices with cucumber and sesame seeds.</p>
+              <div class="food-footer">
+                <span class="price">₹269</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Non-Veg Sushi Only -->
+      <div class="tab-content show-nonveg-sushi">
+        <div class="food-grid">
+          <div class="food-item nonveg">
+            <div class="food-image">
+              <img src="https://www.seriouseats.com/thmb/bWIbU8mEzNjpEH8KBX0WKzNF_Ow=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2016__03__20160323-california-roll-31-358a52e9c1b9410ab18a79a3e43377c1.jpg" alt="California Roll"/>
+              <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>California Roll</h3>
+              <p>Crab stick, avocado, cucumber with tobiko and creamy mayo sauce.</p>
+              <div class="food-footer">
+                <span class="price">₹349</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-item nonveg">
+            <div class="food-image">
+              <img src="https://www.seriouseats.com/thmb/tXC5VPIGdjwl9TdH_TRqTIqDsXY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2019__05__20190509-salmon-sushi-vicky-wasik-14-7825e90a4a1e462cb62ffbbca97cd464.jpg" alt="Salmon Nigiri"/>
+              <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+            </div>
+            <div class="food-details">
+              <h3>Salmon Nigiri</h3>
+              <p>Fresh salmon slices over seasoned sushi rice with wasabi.</p>
+              <div class="food-footer">
+                <span class="price">₹379</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Special Sushi Only -->
+      <div class="tab-content show-special-sushi">
+        <div class="food-grid">
+          <div class="food-item nonveg">
+            <div class="food-image">
+              <img src="https://img.freepik.com/premium-photo/assorted-sushi-platter-elegant-table-setting_711700-21906.jpg" alt="Dragon Roll"/>
+              <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+              <span class="special-badge">CHEF SPECIAL</span>
+            </div>
+            <div class="food-details">
+              <h3>Dragon Roll</h3>
+              <p>Shrimp tempura, eel, avocado with special dragon sauce.</p>
+              <div class="food-footer">
+                <span class="price">₹499</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="food-item nonveg">
+            <div class="food-image">
+              <img src="https://static.onecms.io/wp-content/uploads/sites/44/2023/02/09/8500-spicy-tuna-roll-DDMFS-4x3-b133e170d5c747548efa804e3f1b5a3b.jpg" alt="Spicy Tuna Roll"/>
+              <span class="diet-badge nonveg-badge">🍖 NON-VEG</span>
+              <span class="special-badge">CHEF SPECIAL</span>
+            </div>
+            <div class="food-details">
+              <h3>Spicy Tuna Roll</h3>
+              <p>Fresh tuna with spicy mayo, cucumber, and chili flakes.</p>
+              <div class="food-footer">
+                <span class="price">₹449</span>
+                <a href="#" class="add-btn">Add +</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     <!-- Footer -->
     <footer class="main-footer">
       <div class="container">
-        <p>&copy; 2025 FoodHub. All rights reserved.</p>
+        <p>&copy; 2025 FoodExpress. All rights reserved.</p>
         <p>🌿 Vegetarian | 🍖 Non-Vegetarian Options Available</p>
       </div>
     </footer>

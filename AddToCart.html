@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FoodExpress - Cart & Billing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="AddToCart.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Food<span>Express</span></h1>
+      <a href="MainPage.html" class="return-home">← Back to Home</a>
+    </header>
+
+    <main class="cart-section">
+      <h2>Your Cart</h2>
+      <form>
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Qty</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Margherita Pizza</strong><br />
+                <span class="cart-item-desc">Fresh mozzarella, tomatoes</span>
+              </td>
+              <td>
+                <input type="number" min="1" name="qty-pizza" value="1" />
+              </td>
+              <td>₹399</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Paneer Tikka Burger</strong><br />
+                <span class="cart-item-desc"
+                  >Grilled paneer patty, tikka sauce</span
+                >
+              </td>
+              <td>
+                <input type="number" min="1" name="qty-burger" value="2" />
+              </td>
+              <td>₹360</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="cart-summary">
+          <span class="cart-total-label">Total:</span>
+          <span class="cart-total-value">₹759</span>
+        </div>
+        <a href="#" class="checkout-btn">Proceed to Checkout</a>
+      </form>
+    </main>
+  </body>
+</html>

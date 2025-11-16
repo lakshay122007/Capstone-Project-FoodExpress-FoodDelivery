@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #222;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background: #ff6b35;
+    color: #fff;
+    padding: 22px 26px 20px;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+.logo span { color: #ffe66d; }
+
+.return-home {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    background: #ffd93d;
+    color: #333;
+    border-radius: 6px;
+    padding: 6px 16px;
+    font-weight: 600;
+    transition: background 0.18s;
+}
+.return-home:hover { background: #ffe66d; }
+
+.cart-section {
+    max-width: 470px;
+    margin: 54px auto 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 28px rgba(0,0,0,0.09);
+    padding: 32px 26px;
+}
+
+.cart-section h2 {
+    text-align: center;
+    margin-bottom: 28px;
+    color: #ff6b35;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+.cart-table th, .cart-table td {
+    padding: 12px 8px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+.cart-table th {
+    color: #444;
+    font-size: 1em;
+    font-weight: 700;
+    background: #faf8f0;
+}
+
+.cart-item-desc {
+    color: #888;
+    font-size: 0.98em;
+}
+
+.cart-table input[type="number"] {
+    width: 56px;
+    padding: 4px;
+    font-size: 1em;
+    border-radius: 4px;
+    border: 1px solid #ececec;
+    text-align: center;
+}
+
+.cart-summary {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.13em;
+    font-weight: bold;
+    margin: 18px 0 18px 0;
+    color: #333;
+    gap: 8px;
+}
+.cart-total-label { color: #666; }
+
+.checkout-btn {
+    display: block;
+    background: #ff6b35;
+    color: #fff;
+    border-radius: 7px;
+    font-weight: 600;
+    padding: 14px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.07em;
+    margin-top: 10px;
+    transition: background .19s;
+}
+.checkout-btn:hover { background: #e55a2b; }
+
+@media (max-width: 600px) {
+    .cart-section {
+        padding: 14px 2vw;
+    }
+    .cart-table th, .cart-table td {
+        padding: 8px 2px;
+    }
+}

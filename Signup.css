@@ -1,10 +1,20 @@
 body {
     min-height: 100vh;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f7f7f9; /* Subtle, soft background */
+    background: #f7f7f9;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
+}
+.auth-container {
+    background: #fff;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    padding: 36px 28px;
+    width: 330px;
+    max-width: 96vw;
+    text-align: center;
 }
 .return-home {
     display: block;
@@ -17,32 +27,27 @@ body {
 .return-home:hover {
     color: #ff6b35;
     text-decoration: underline;
-    cursor: pointer;
 }
-.auth-section {
-    background: #fff;
-    box-shadow: 0 4px 32px rgba(0,0,0,0.08);
-    border-radius: 12px;
-    padding: 36px 28px;
-    width: 340px;
-    max-width: 96vw;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.auth-logo {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #222;
+    margin-bottom: 16px;
+}
+.auth-logo span { 
+    color: #ff6b35; 
 }
 .form-heading {
-    color: #ff6b35;
-    font-size: 1.35em;
-    margin-bottom: 18px;
+    color: #222;
+    font-size: 1.3em;
+    margin-bottom: 16px;
     font-weight: 600;
-    letter-spacing: 0.3px;
 }
 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 100%;
 }
 .auth-input {
     padding: 11px;
@@ -64,7 +69,7 @@ form {
     font-weight: 700;
     font-size: 1.06em;
     cursor: pointer;
-    margin-top: 5px;
+    margin-top: 8px;
     transition: background 0.2s;
 }
 .auth-btn:hover {
@@ -73,14 +78,10 @@ form {
 .alt-option {
     color: #7c7c7c;
     font-size: 0.99em;
-    margin-top: 15px;
+    margin-top: 12px;
 }
 .alt-option a {
     color: #ff6b35;
     text-decoration: underline;
     cursor: pointer;
-}
-@media (max-width: 500px) {
-    .auth-section { padding: 14px 3vw; }
-    .form-heading { font-size: 1em; }
 }
